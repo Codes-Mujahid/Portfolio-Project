@@ -1,0 +1,303 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+body{
+    background-color: #2d2b2b;
+    color: #fff;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
+/* ============Header-Section============ */
+header {
+    background-color: #2d2b2b69;
+    border-bottom: 1px solid #454545;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(3px);
+    z-index: 999;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.nav a.active{
+    color: yellow;
+}
+.nav a:hover{
+    color: yellow;
+    transition: .3s ease-in-out;
+}
+/* ================Hero Section============ */
+.hero-section{
+    padding: 100px 0;
+    height: 90vh;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img img {
+    width: 260px;
+    border-radius: 50%;
+    height: 280px;
+}
+.hero-text{
+    width: 50%;
+    margin-left: 100px;
+}
+.hero-text h1 {
+    color: yellow;
+    font-weight: 600;
+}
+.hero-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+.social-icons i{
+    color: #fff;
+    font-size: 25px;
+}
+.social-icons i:hover{
+    color: yellow;
+    transition: .3s ease-in-out;
+    margin-top: -10px;
+}
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+/* =========Resume============ */
+.resume-section{
+    text-align: center;
+}
+.resume {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+   /* text-align: center;
+    */
+}
+.resume-right .experience {
+    width: 35%;
+}
+.exp-underline {
+    background: #fff;
+    height: 2px;
+    width: 100%;
+}
+.exp-innerline {
+    height: 2px;
+    width: 45%;
+    background: yellow;
+}
+.list-items {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-items .list-circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #363030;
+    border: 3px solid yellow;
+    position: absolute;
+    top: 8px;
+    left: -16px;
+}
+.list-items .list-date {
+    background: black;
+    padding: 10px 15px;
+    border-radius: 47px;
+    margin: 0 40px;
+}
+.list-items .list-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.list-items .list-text h5, p{
+    margin: 0;
+}
+.resume-right-list{
+    border-left: 2px solid #fff;
+}
+/* ======Certificates Section======= */
+.certificate-section {
+    text-align: center;
+    padding: 70px;
+}
+.certificate .certificate-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3rem;
+}
+.certificate-list .list-style {
+    width: 40%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    border: 2px solid #fff;
+    transition: .3s ease-in-out;
+}
+.certificate-list .list-style:hover{
+    transform: translateY(-10px);
+    transition: .3s ease-in-out;
+}
+.cer-img img{
+    width: 60px;
+    background-color: #fff;
+}
+.cer-img {
+    padding: 3rem;
+    background-color: #fff;
+}
+.cer-txt a{
+    color: yellow;
+}
+/* ========skill=========== */
+.skill-section{
+    text-align: center;
+    padding: 70px 0;
+}
+.skill-title{
+    position: relative 
+}
+.skill-title h1{
+    color: yellow;
+    margin: 0;
+}
+.skill-underline {
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+.skill-innerline {
+    background-color: yellow;
+    height: 2px;
+    width: 70px;
+}
+.skill-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.skill-box .box-left {
+    width: 30%;
+}
+.skill-box .box-left h2{
+    text-align: start;
+    color: yellow;
+}
+.skill-items {
+    display: flex;
+    justify-content: space-between;
+   /* align-items: center;
+    */
+}
+
+.skill-box .box-right {
+    width: 30%;
+}
+.skill-box .box-right h2 {
+    text-align: start;
+    color: yellow;
+}
+.progress-box {
+    display: block;
+    width: 100%;
+    appearance: none;
+    margin-bottom: 20px;
+    height: 10px;
+}
+progress::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 10px;
+   /* Round the background bar */
+}
+progress::-webkit-progress-value {
+    background-color: yellow;
+    border-radius: 10px;
+   /* Round the filled progress */
+}
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: yellow;
+    border-radius: 10px;
+   /* Round the filled progress */
+}
+/* ============blog- section============ */
+.blog-section{
+    padding: 70px auto;
+}
+.blog-section h1{
+    color: yellow;
+    text-align: center;
+}
+.line{
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+.inner-line{
+    height: 2px;
+    width: 60px;
+    background-color: yellow;
+}
+.blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog-items {
+    width: 30%;
+    border: 2px solid yellow;
+    margin-bottom: 70px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+   /* box-shadow: 2px 1px yellow;
+    */
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-items h3{
+    color: yellow;
+}
+
+.blog-items a {
+    color: yellow;
+    text-align: center !important;
+    display: block;
+    margin-top: 20px;
+}
